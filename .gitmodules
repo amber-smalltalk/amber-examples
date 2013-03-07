@@ -1,3 +1,6 @@
 [submodule "vendor/amber"]
 	path = vendor/amber
 	url = https://github.com/amber-smalltalk/amber
+[submodule "googlecharts"]
+	path = googlecharts
+	url = http://github.com/tomrake/googlecharts.git
