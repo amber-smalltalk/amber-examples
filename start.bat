@@ -1,1 +1,1 @@
-node vendor/amber/server/server.js
+node vendor/amber/server/server.js %*
