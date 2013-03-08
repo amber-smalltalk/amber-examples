@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href='css/twitterwall.css' /> 
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
     <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'> 
-    <script src="../../js/amber.js" type="text/javascript"></script>
+    <script src="../vendor/amber/js/amber.js" type="text/javascript"></script>
   </head> 
   <body> 
          
@@ -17,15 +17,15 @@
 		<p>Shows the last 5 Tweets regarding your query</p>
 	    <p>Examine the <button onClick="smalltalk.Browser._openOn_(smalltalk.TwitterSearch)"> TwitterSearch class</button></p> 
 
-	<p>Query:<br><input id="searchQuery" type="text" size="30" maxlength="30" value="#smalltalk">
+	<p>Query:<br><input id="searchQuery" type="text" size="30" maxlength="30" value="#amber-smalltalk">
 	<button onClick="smalltalk.TwitterSearch._new()._query()">update</button>
 	</p>
 	<div id="playground"></div>
 	</center>
 	<script type="text/javascript"> 
 	loadAmber({
-		files: ['TwitterWall.js'],
-		prefix: 'examples/twitterwall/js',
+		files: ['TwitterWall'],
+		packageHome: './',
 		ready: function() {
 			smalltalk.TwitterSearch._new()._query() 
 		}}); 
