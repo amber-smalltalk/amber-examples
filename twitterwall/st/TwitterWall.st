@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'TwitterWall' properties: #{}!
+Smalltalk current createPackage: 'TwitterWall'!
 Widget subclass: #Tweet
 	instanceVariableNames: 'json'
 	category: 'TwitterWall'!
