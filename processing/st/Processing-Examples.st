@@ -43,8 +43,13 @@ myDY := centerY
 processing line: centerX y: centerY dX: myDX dy: myDY.
 !
 
+firstProcessingInstance
+
+	<return Processing.instances[0]>
+!
+
 initialize
-processing := <Processing.instances[0]>.
+processing := self firstProcessingInstance.
 centerX := processing width / 2.
 centerY := processing height / 2.
 maxArmLength := Math min: centerX or: centerY.
@@ -61,6 +66,6 @@ init
 clock := ProcessingClock new .
 processing := clock processing.
 block := clock draw.
-<processing.draw=block>
+processing at: 'draw' put: block
 ! !
 
