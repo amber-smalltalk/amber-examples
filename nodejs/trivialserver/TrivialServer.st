@@ -1,10 +1,12 @@
 Object subclass: #TrivialServer
-        instanceVariableNames: 'counter'
+        instanceVariableNames: 'os http counter'
         category: 'TrivialServer'!
 
 !TrivialServer methodsFor: 'initializing'!
 initialize
-        counter := 0
+        counter := 0.
+		os := require value: 'os'.
+		http := require value: 'http'.
 ! !
 
 !TrivialServer methodsFor: 'processing'!
@@ -42,8 +44,6 @@ start
 !TrivialServer class methodsFor: 'initialization'!
 initialize
         "We require these Node modules."
-    os := require value: 'os'.
-    http := require value: 'http'.
 !
 
 main
