@@ -1,0 +1,10 @@
+{
+  "name": "nodejs-example",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "pegjs": "~0.7.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2"
+  }
+}
