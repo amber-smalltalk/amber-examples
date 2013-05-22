@@ -4,3 +4,6 @@
 [submodule "googlecharts"]
 	path = googlecharts
 	url = https://github.com/tomrake/googlecharts.git
+[submodule "vendor/jstree"]
+	path = vendor/jstree
+	url = https://github.com/vakata/jstree.git
