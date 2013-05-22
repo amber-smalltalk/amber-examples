@@ -1,0 +1,42 @@
+
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>DripfeedIt</title> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="author" content="Philippe Back" /> 
+	<link rel="stylesheet" type="text/css" href='css/dripfeedit.css' /> 
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
+    <script src="../vendor/amber/js/amber.js" type="text/javascript"></script>
+    
+  </head> 
+  <body> 
+         
+	<center>
+		<h2>DripfeedIt - Fighting Infobesity One Drop at a Time</h2>
+		<p>Here is your droplet</p>
+	    <p>Examine the <button onClick="smalltalk.Browser._openOn_(smalltalk.Story)"> DripfeedIt class</button></p> 
+
+	<p>Query:<br><input id="storyStep" type="text" size="30" maxlength="30" value="#uml-usecases">
+	<button onClick="smalltalk.DripfeedIt._new()._query()">update</button>
+	<button onClick="smalltalk.Story._new()._appendToJQuery_($('#desktop'))">Story show</button>
+	<button onClick="amber.loadHelios()">Load Helios IDE</button>
+	<button onClick="amber.popupHelios()">Load Helios IDE in separate Window</button>
+        <a id="linkhelios" href="http://127.0.0.1:4000/vendor/amber/helios.html" target="_blank">Open Helios in New Tab</a>
+	</p>
+	<div id="treecontainer">TREE CONTAINER</div>
+	<div id="desktop"></div>
+	<div id="playground"></div>
+	</center>
+	<script type="text/javascript"> 
+	loadAmber({
+		files: ['DripfeedIt.js'],
+		packageHome: './',
+		ready: function() {
+			smalltalk.Browser._open() 
+			}}); 
+
+</script>
+	
+  </body> 
+</html> 
