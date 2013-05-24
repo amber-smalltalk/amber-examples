@@ -19,10 +19,17 @@ module.exports = function(grunt) {
 			main_class: 'Hello',
 			output_name: 'Program'
 		 },
-		 benchfib: {
+		benchfib: {
 			working_dir: 'benchfib',
 			src: ['Benchfib.st'],
 			main_class: 'Benchfib',
+			output_name: 'Program'
+		},
+		meta: {
+			working_dir: 'meta',
+			src: ['MyScript.st'],
+			main_class: 'MyScript',
+			libraries: ['parser','Compiler'],
 			output_name: 'Program'
 		},
 		pystone: {

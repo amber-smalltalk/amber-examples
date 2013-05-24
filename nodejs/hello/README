@@ -1,13 +1,13 @@
-Trivial Node.js example in JTalk that also uses the Google Closure compiler
-if ~/compiler.jar is present.
+Trivial Node.js example in Amber. To compile execute:
+	grunt amberc:hello
 
 Hello.st - source code.
 hello    - trivial bash script to run resulting program.
-Makefile - trivial makefile, read it.
 
-Hello.js - produced when you run make. Contains JTalk + Hello.st + a main call
+Hello.js - compiled from Hello.st.
+Program.js - compile from Hello.st and includes Amber, can run from node.
 
-To play, do this:
+To compile and run.
+	grunt amberc:hello
+	./hello
 
-make
-./hello
