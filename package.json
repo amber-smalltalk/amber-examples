@@ -1,0 +1,14 @@
+{
+    "name": "amber-examples",
+    "version": "0.1.0",
+    "description": "Amber Examples",
+    "homepage": "http://amber-lang.net",
+    "keywords": [ "javascript", "smalltalk", "language", "compiler", "web" ],
+    "engines": {
+        "node": "0.8.x"
+    },
+    "devDependencies": {
+        "pegjs": "~0.7.0",
+        "grunt": "~0.4.0"
+    }
+}
