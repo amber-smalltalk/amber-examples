@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
   grunt.loadTasks('../vendor/amber/grunt/tasks');
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-
   grunt.registerTask('default', ['amberc:hello']);
 
   grunt.initConfig({
