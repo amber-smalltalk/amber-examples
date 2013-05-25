@@ -1,9 +1,17 @@
 Smalltalk current createPackage: 'TwitterWall'!
 Widget subclass: #Tweet
 	instanceVariableNames: 'json'
-	category: 'TwitterWall'!
+	package: 'TwitterWall'!
 
 !Tweet methodsFor: 'not yet classified'!
+
+json
+^json
+!
+
+json: aJson
+json := aJson
+!
 
 renderOn: tr
 
@@ -34,14 +42,6 @@ pDate := HTMLCanvas new p.
 pDate element id: 'date'.
 pDate append: (json at: 'created_at').
 tdMessage append: pDate.
-!
-
-json
-^json
-!
-
-json: aJson
-json := aJson
 ! !
 
 !Tweet class methodsFor: 'not yet classified'!
@@ -55,10 +55,23 @@ tweet renderOn: tr.
 ! !
 
 Object subclass: #TwitterSearch
-	instanceVariableNames: 'queryString'
-	category: 'TwitterWall'!
+	instanceVariableNames: ''
+	package: 'TwitterWall'!
 
 !TwitterSearch methodsFor: 'not yet classified'!
+
+query
+| result queryString |
+queryString := ('#searchQuery'  asJQuery val) replace: '#' with: '%23'.
+result := jQuery 
+			ajax: 'http://search.twitter.com/search.json?rpp=5&q=', queryString
+			options: #{
+				'type' -> 'GET'.
+				'success' -> [ :tmp | self success: (tmp results)].
+				'error' -> [window alert: 'error'].
+				'dataType' -> 'jsonp'
+			}.
+!
 
 success: tweets
 | playground table tr |
@@ -74,18 +87,5 @@ playground empty.
         	   Tweet openAt: tr with: tweet
         ]
 ] appendToJQuery: playground.
-!
-
-query
-| result queryString |
-queryString := ('#searchQuery'  asJQuery val) replace: '#' with: '%23'.
-result := jQuery 
-			ajax: 'http://search.twitter.com/search.json?rpp=5&q=', queryString
-			options: #{
-				'type' -> 'GET'.
-				'success' -> [ :tmp | self success: (tmp results)].
-				'error' -> [window alert: 'error'].
-				'dataType' -> 'jsonp'
-			}.
 ! !
 
