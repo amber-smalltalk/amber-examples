@@ -1647,7 +1647,6 @@ cssClass
 !FOSDEMCanvasSlide methodsFor: 'drawing'!
 
 drawOnCanvas
-	|c2d|
 	c2d := canvas element getContext: '2d'.
 	c2d 
 		clearRect: 0 
