@@ -1062,7 +1062,7 @@ referencedClasses: []
 smalltalk.ProfStef.klass);
 
 
-smalltalk.addClass('TrySmalltalkWidget', smalltalk.nil, ['workspace', 'contents', 'header'], 'TrySmalltalk');
+smalltalk.addClass('TrySmalltalkWidget', smalltalk.Widget, ['workspace', 'contents', 'header'], 'TrySmalltalk');
 smalltalk.addMethod(
 smalltalk.method({
 selector: "contents",
