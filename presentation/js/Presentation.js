@@ -1,5 +1,5 @@
 smalltalk.addPackage('Presentation');
-smalltalk.addClass('Presentation', smalltalk.nil, ['currentSlide', 'slides'], 'Presentation');
+smalltalk.addClass('Presentation', smalltalk.Widget, ['currentSlide', 'slides'], 'Presentation');
 smalltalk.addMethod(
 smalltalk.method({
 selector: "author",
@@ -989,7 +989,7 @@ referencedClasses: []
 smalltalk.SweSUG2012Presentation.klass);
 
 
-smalltalk.addClass('PresentationNavigator', smalltalk.nil, ['presentationBrush', 'currentPresentation', 'slideSelect'], 'Presentation');
+smalltalk.addClass('PresentationNavigator', smalltalk.Widget, ['presentationBrush', 'currentPresentation', 'slideSelect'], 'Presentation');
 smalltalk.addMethod(
 smalltalk.method({
 selector: "checkHash",
@@ -1511,7 +1511,7 @@ referencedClasses: []
 smalltalk.PresentationNavigator.klass);
 
 
-smalltalk.addClass('Slide', smalltalk.nil, ['presentation'], 'Presentation');
+smalltalk.addClass('Slide', smalltalk.Widget, ['presentation'], 'Presentation');
 smalltalk.addMethod(
 smalltalk.method({
 selector: "backgroundColor",
