@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       presentation: {
         src: ['st/Presentation.st'],
-	libraries: ['Canvas'],
+        libraries: ['Canvas'],
         output_dir: 'js'
       }
     }
