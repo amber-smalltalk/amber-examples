@@ -13,6 +13,7 @@ module.exports = function(grunt) {
       },
       trysmalltalk: {
         src: ['st/TrySmalltalk.st'],
+        libraries: ['Canvas'],
         output_dir: 'js'
       }
     }

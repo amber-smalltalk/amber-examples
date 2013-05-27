@@ -1,5 +1,5 @@
 smalltalk.addPackage('TwitterWall');
-smalltalk.addClass('Tweet', smalltalk.nil, ['json'], 'TwitterWall');
+smalltalk.addClass('Tweet', smalltalk.Widget, ['json'], 'TwitterWall');
 smalltalk.addMethod(
 smalltalk.method({
 selector: "json",
