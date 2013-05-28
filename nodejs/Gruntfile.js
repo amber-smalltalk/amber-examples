@@ -12,10 +12,9 @@ module.exports = function(grunt) {
         closure_jar: ''
       },
       hello: {
-        working_dir: 'hello',
-        src: ['Hello.st'],
+        src: ['hello/Hello.st'],
         main_class: 'Hello',
-        output_name: 'Program'
+        output_name: 'hello/Program'
       },
       benchfib: {
         working_dir: 'benchfib',
