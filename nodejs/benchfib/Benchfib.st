@@ -1,6 +1,6 @@
 Object subclass: #Benchfib
 	instanceVariableNames: ''
-	category: 'Benchfib'!
+	package: 'Benchfib'!
 
 !Benchfib class methodsFor: 'not yet classified'!
 
