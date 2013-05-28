@@ -1,6 +1,6 @@
 Object subclass: #MyScript
 	instanceVariableNames: ''
-	category: 'MyScript'!
+	package: 'MyScript'!
 
 !MyScript class methodsFor: 'main'!
 main
@@ -8,20 +8,22 @@ main
 	creating a class, compiling some methods and then exporting
 	this package in javascript format to stdout"
 
-	| klass compiler method |
+	| klass method |
+
+	console log: 'Creating new class #Dummy'.
+
 	Object subclass: #Dummy instanceVariableNames: '' package: 'Dummy'.
 	klass := Smalltalk current at: #Dummy.
-	compiler := Compiler new.
 
-	method := compiler load: 'foo ^10' forClass: klass.
-	method category: 'foo'.
-	klass addCompiledMethod: method.
+	console log: 'Add method #foo to class #Dummy'.
+	klass compile: 'foo ^10' category: 'foo'.
 
-	method := compiler load: 'bar ^ self foo * 2' forClass: klass.
-	method category: 'foo'.
-	klass addCompiledMethod: method.
+	console log: 'Add method #bar to class #Dummy'.
+	klass compile: 'bar ^ self foo * 2' category: 'foo'.
 
-	console log: (Exporter new exportPackage: 'Dummy')
+	console log: '--- Exported JavaScript for class #Dummy ---'.
+	console log: (Exporter new exportPackage: 'Dummy').
+	console log: '--- Exported JavaScript for class #Dummy End---'.
 ! !
 
 
