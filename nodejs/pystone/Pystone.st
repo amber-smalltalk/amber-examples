@@ -1,6 +1,6 @@
 Object subclass: #PyStoneRecord
 	instanceVariableNames: 'ptrComp discr enumComp intComp stringComp'
-	category: 'Pystone'!
+	package: 'Pystone'!
 !PyStoneRecord commentStamp!
 Record class used in Pystone benchmark.!
 
