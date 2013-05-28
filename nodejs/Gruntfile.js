@@ -17,10 +17,9 @@ module.exports = function(grunt) {
         output_name: 'hello/Program'
       },
       benchfib: {
-        working_dir: 'benchfib',
-        src: ['Benchfib.st'],
+        src: ['benchfib/Benchfib.st'],
         main_class: 'Benchfib',
-        output_name: 'Program'
+        output_name: 'benchfib/Program'
       },
       meta: {
         working_dir: 'meta',
