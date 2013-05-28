@@ -1,6 +1,6 @@
 Object subclass: #MyScript
 	instanceVariableNames: ''
-	category: 'MyScript'!
+	package: 'MyScript'!
 
 !MyScript class methodsFor: 'main'!
 main
