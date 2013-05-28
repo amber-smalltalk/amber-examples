@@ -34,10 +34,9 @@ module.exports = function(grunt) {
         output_name: 'pystone/Program'
       },
       trivialserver: {
-        working_dir: 'trivialserver',
-        src: ['TrivialServer.st'],
+        src: ['trivialserver/TrivialServer.st'],
         main_class: 'TrivialServer',
-        output_name: 'Program'
+        output_name: 'trivialserver/Program'
       }
     }
   });
