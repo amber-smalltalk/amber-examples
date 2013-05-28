@@ -22,11 +22,13 @@ module.exports = function(grunt) {
         output_name: 'benchfib/Program'
       },
       meta: {
-        working_dir: 'meta',
-        src: ['MyScript.st'],
+        src: ['meta/MyScript.st'],
         main_class: 'MyScript',
-        libraries: ['parser','Compiler'],
-        output_name: 'Program'
+        libraries: [
+            'Importer-Exporter', 'Compiler-Exceptions', 'Compiler-Core', 'Compiler-AST',
+            'Compiler-IR', 'Compiler-Inlining', 'Compiler-Semantic', 'Compiler-Interpreter', 'parser'
+        ],
+        output_name: 'meta/Program'
       },
       pystone: {
         src: ['pystone/Pystone.st'],
