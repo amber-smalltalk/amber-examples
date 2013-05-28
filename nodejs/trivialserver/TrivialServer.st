@@ -1,6 +1,6 @@
 Object subclass: #TrivialServer
         instanceVariableNames: 'os http counter'
-        category: 'TrivialServer'!
+        package: 'TrivialServer'!
 
 !TrivialServer methodsFor: 'initializing'!
 initialize
