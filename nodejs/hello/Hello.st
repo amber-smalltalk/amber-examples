@@ -1,6 +1,6 @@
 Object subclass: #Hello
         instanceVariableNames: ''
-        category: 'Hello'!
+        package: 'Hello'!
 
 !Hello class methodsFor: 'main'!
 
