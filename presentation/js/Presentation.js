@@ -2377,8 +2377,8 @@ return $6;
 _st(_st(html)._p())._with_((function(){
 return smalltalk.withContext(function($ctx3) {
 $7=_st(html)._a();
-_st($7)._href_("https://github.com/NicolasPetton/amber");
-$8=_st($7)._with_("github.com/NicolasPetton/amber");
+_st($7)._href_("https://github.com/amber-smalltalk/amber");
+$8=_st($7)._with_("github.com/amber-smalltalk/amber");
 return $8;
 }, function($ctx3) {$ctx3.fillBlock({},$ctx2)})}));
 return _st(_st(html)._p())._with_((function(){
@@ -2391,7 +2391,7 @@ return $10;
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1)})}));
 return self}, function($ctx1) {$ctx1.fill(self,"renderSlideOn:",{html:html},smalltalk.FOSDEMContributionsSlide)})},
 args: ["html"],
-source: "renderSlideOn: html\x0a\x09html div class: 'section'; with: [\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: '/documentation.html'; with: 'Documentation'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'http://amber-lang.net'; with: 'amber-lang.net'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'https://github.com/NicolasPetton/amber'; with: 'github.com/NicolasPetton/amber'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'http://groups.google.com/group/amber-lang'; with: 'groups.google.com/group/amber-lang']]",
+source: "renderSlideOn: html\x0a\x09html div class: 'section'; with: [\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: '/documentation.html'; with: 'Documentation'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'http://amber-lang.net'; with: 'amber-lang.net'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'https://github.com/amber-smalltalk/amber'; with: 'github.com/amber-smalltalk/amber'].\x0a\x09\x09html p with: [\x0a\x09\x09\x09html a href: 'http://groups.google.com/group/amber-lang'; with: 'groups.google.com/group/amber-lang']]",
 messageSends: ["class:", "div", "with:", "href:", "a", "p"],
 referencedClasses: []
 }),

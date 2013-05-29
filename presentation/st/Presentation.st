@@ -1695,7 +1695,7 @@ renderSlideOn: html
 		html p with: [
 			html a href: 'http://amber-lang.net'; with: 'amber-lang.net'].
 		html p with: [
-			html a href: 'https://github.com/NicolasPetton/amber'; with: 'github.com/NicolasPetton/amber'].
+			html a href: 'https://github.com/amber-smalltalk/amber'; with: 'github.com/amber-smalltalk/amber'].
 		html p with: [
 			html a href: 'http://groups.google.com/group/amber-lang'; with: 'groups.google.com/group/amber-lang']]
 ! !
