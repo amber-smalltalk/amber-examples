@@ -1841,8 +1841,8 @@ return $6;
 _st(_st(html)._p())._with_((function(){
 return smalltalk.withContext(function($ctx3) {
 $7=_st(html)._a();
-_st($7)._href_("https://github.com/NicolasPetton/amber");
-$8=_st($7)._with_("github.com/NicolasPetton/amber");
+_st($7)._href_("https://github.com/amber-smalltalk/amber");
+$8=_st($7)._with_("github.com/amber-smalltalk/amber");
 return $8;
 }, function($ctx3) {$ctx3.fillBlock({},$ctx2)})}));
 return _st(_st(html)._p())._with_((function(){
