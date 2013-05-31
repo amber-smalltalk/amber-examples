@@ -14,7 +14,8 @@ module.exports = function(grunt) {
       twitterwall: {
         src: ['st/TwitterWall.st'],
         output_dir: 'js',
-        libraries:[ 'Canvas']
+        libraries:[ 'Canvas'],
+        deploy: true
       }
     }
   });
