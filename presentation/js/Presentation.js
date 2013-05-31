@@ -2111,7 +2111,7 @@ fn: function (){
 var self=this;
 return smalltalk.withContext(function($ctx1) { 
 var $1;
-$1=smalltalk.HashedCollection._fromPairs_(["arrows".__minus_gt(true),"keyboard".__minus_gt(false),"pageNumbers".__minus_gt(false),"closed".__minus_gt(true)]);
+$1=smalltalk.HashedCollection._from_(["arrows".__minus_gt(true),"keyboard".__minus_gt(false),"pageNumbers".__minus_gt(false),"closed".__minus_gt(true)]);
 return $1;
 }, function($ctx1) {$ctx1.fill(self,"bookletOptions",{},smalltalk.FOSDEMBookletSlide)})},
 args: [],
@@ -2591,7 +2591,7 @@ category: 'callback',
 fn: function (){
 var self=this;
 return smalltalk.withContext(function($ctx1) { 
-_st(jQuery)._ajax_options_("http://search.twitter.com/search.json?rpp=3&q=%40AmberSmalltalk",smalltalk.HashedCollection._fromPairs_(["type".__minus_gt("GET"),"success".__minus_gt((function(json){
+_st(jQuery)._ajax_options_("http://search.twitter.com/search.json?rpp=3&q=%40AmberSmalltalk",smalltalk.HashedCollection._from_(["type".__minus_gt("GET"),"success".__minus_gt((function(json){
 return smalltalk.withContext(function($ctx2) {
 return self._renderTweets_(_st(json)._results());
 }, function($ctx2) {$ctx2.fillBlock({json:json},$ctx1)})})),"dataType".__minus_gt("jsonp")]));
