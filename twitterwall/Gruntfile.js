@@ -7,14 +7,14 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('../package.json'),
 
     amberc: {  
-      _config: {
+      options: {
         amber_dir: '../vendor/amber',
         closure_jar: ''
       },
       twitterwall: {
         src: ['st/TwitterWall.st'],
         output_dir: 'js',
-	libraries:[ 'Canvas']
+        libraries:[ 'Canvas']
       }
     }
   });
