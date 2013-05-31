@@ -105,7 +105,7 @@ var self=this;
 var result,queryString;
 return smalltalk.withContext(function($ctx1) { 
 queryString=_st(_st("#searchQuery"._asJQuery())._val())._replace_with_("#","%23");
-result=_st(jQuery)._ajax_options_("http://search.twitter.com/search.json?rpp=5&q=".__comma(queryString),smalltalk.HashedCollection._fromPairs_(["type".__minus_gt("GET"),"success".__minus_gt((function(tmp){
+result=_st(jQuery)._ajax_options_("http://search.twitter.com/search.json?rpp=5&q=".__comma(queryString),smalltalk.HashedCollection._from_(["type".__minus_gt("GET"),"success".__minus_gt((function(tmp){
 return smalltalk.withContext(function($ctx2) {
 return self._success_(_st(tmp)._results());
 }, function($ctx2) {$ctx2.fillBlock({tmp:tmp},$ctx1)})})),"error".__minus_gt((function(){

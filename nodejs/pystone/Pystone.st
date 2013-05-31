@@ -77,7 +77,7 @@ ptrComp: p discr: d enumComp: e intComp: i stringComp: s
 
 Object subclass: #Pystone
 	instanceVariableNames: 'nulltime ptrGlbNext ptrGlb ident1 ident3 ident2 ident4 ident5 ident6 intGlob boolGlob char1Glob char2Glob array1Glob array2Glob func3 func2 func1'
-	category: 'Pystone'!
+	package: 'Pystone'!
 !Pystone commentStamp!
 This is a straight translation of pystone 1.1 from Python to Squeak. Procedures have been mapped to instance side methods, functions have been mapped to blocks. Open a transcript and run:
 
