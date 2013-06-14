@@ -1,3 +1,4 @@
+(function(smalltalk,nil,_st){
 smalltalk.addPackage('Processing-Examples');
 smalltalk.addClass('ProcessingClock', smalltalk.Object, ['processing', 'centerX', 'centerY', 'maxArmLength'], 'Processing-Examples');
 smalltalk.addMethod(
@@ -104,3 +105,4 @@ messageSends: ["new", "processing", "draw", "at:put:"]}),
 smalltalk.ProcessingClock.klass);
 
 
+})(global_smalltalk,global_nil,global__st);

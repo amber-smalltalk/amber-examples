@@ -1,3 +1,4 @@
+(function(smalltalk,nil,_st){
 smalltalk.addPackage('Presentation');
 smalltalk.addClass('Presentation', smalltalk.Widget, ['currentSlide', 'slides'], 'Presentation');
 smalltalk.addMethod(
@@ -4205,3 +4206,4 @@ smalltalk.WorkspaceSlide);
 
 
 
+})(global_smalltalk,global_nil,global__st);

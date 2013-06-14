@@ -1,3 +1,4 @@
+(function(smalltalk,nil,_st){
 smalltalk.addPackage('TrySmalltalk');
 smalltalk.addClass('AbstractTutorial', smalltalk.Object, [], 'TrySmalltalk');
 smalltalk.AbstractTutorial.comment="Parent class of all ProfStef tutorials.\x0a\x0aTo create your own tutorial:\x0a- subclass AbstractTutorial\x0a- implement a few methods which returns a Lesson instance\x0a- implement tutorial which returns a Collection of selectors to the methods you've created.";
@@ -1452,3 +1453,4 @@ smalltalk.TutorialPlayer);
 
 
 
+})(global_smalltalk,global_nil,global__st);

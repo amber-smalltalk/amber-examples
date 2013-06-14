@@ -8,7 +8,7 @@
 	loadAmber({
 		files: ['TrySmalltalk'],
 		packageHome: './',
-		ready: function() {
+		ready: function(smalltalk) {
 			smalltalk.Browser._openOn_(smalltalk.ProfStef)
 			smalltalk.TrySmalltalkWidget._open();
 		}}); 
