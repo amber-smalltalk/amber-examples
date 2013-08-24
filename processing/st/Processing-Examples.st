@@ -15,11 +15,11 @@ drawBlock := [
   now := Date new.
   
   "Moving hours arm by small increments"
-   hoursPosition := now hours \\ 12 + now minutes / 60 / 12.
+   hoursPosition := ((now hours \\ 12) + (now minutes / 60 )) /12 .
    self drawArm: hoursPosition lengthScale: 0.5 weight: 5.
    
    "Moving minutes arm by small increments"
-    minutesPosition := now minutes + now seconds / 60 / 60.
+    minutesPosition := (now minutes + (now seconds / 60))/60.
     self drawArm: minutesPosition lengthScale: 0.80 weight: 3.
 
     "Moving hour arm by second increments"

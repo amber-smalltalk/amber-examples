@@ -1,5 +1,6 @@
 (function(smalltalk,nil,_st){
 smalltalk.addPackage('Processing-Examples');
+
 smalltalk.addClass('ProcessingClock', smalltalk.Object, ['processing', 'centerX', 'centerY', 'maxArmLength'], 'Processing-Examples');
 smalltalk.addMethod(
 smalltalk.method({
@@ -17,10 +18,10 @@ return smalltalk.withContext(function($ctx2) {
 _st(self["@processing"])._background_((224));
 now=_st($Date())._new();
 now;
-hoursPosition=_st(_st(_st(_st(_st(now)._hours()).__backslash_backslash((12))).__plus(_st(now)._minutes())).__slash((60))).__slash((12));
+hoursPosition=_st(_st(_st(_st(now)._hours()).__backslash_backslash((12))).__plus(_st(_st(now)._minutes()).__slash((60)))).__slash((12));
 hoursPosition;
 self._drawArm_lengthScale_weight_(hoursPosition,(0.5),(5));
-minutesPosition=_st(_st(_st(_st(now)._minutes()).__plus(_st(now)._seconds())).__slash((60))).__slash((60));
+minutesPosition=_st(_st(_st(now)._minutes()).__plus(_st(_st(now)._seconds()).__slash((60)))).__slash((60));
 minutesPosition;
 self._drawArm_lengthScale_weight_(minutesPosition,(0.8),(3));
 secondsPosition=_st(_st(now)._seconds()).__slash((60));
@@ -31,7 +32,7 @@ $1=drawBlock;
 return $1;
 }, function($ctx1) {$ctx1.fill(self,"draw",{drawBlock:drawBlock},smalltalk.ProcessingClock)})},
 args: [],
-source: "draw\x0a| drawBlock |\x0a\x0adrawBlock := [\x0a  | now hoursPosition minutesPosition secondsPosition |  \x0a  processing background: 224.\x0a  \x0a  now := Date new.\x0a  \x0a  \x22Moving hours arm by small increments\x22\x0a   hoursPosition := now hours \x5c\x5c 12 + now minutes / 60 / 12.\x0a   self drawArm: hoursPosition lengthScale: 0.5 weight: 5.\x0a   \x0a   \x22Moving minutes arm by small increments\x22\x0a    minutesPosition := now minutes + now seconds / 60 / 60.\x0a    self drawArm: minutesPosition lengthScale: 0.80 weight: 3.\x0a\x0a    \x22Moving hour arm by second increments\x22\x0a    secondsPosition := now seconds / 60.\x0a    self drawArm: secondsPosition lengthScale: 0.90 weight: 1.\x0a  ].\x0a\x0a^drawBlock",
+source: "draw\x0a| drawBlock |\x0a\x0adrawBlock := [\x0a  | now hoursPosition minutesPosition secondsPosition |  \x0a  processing background: 224.\x0a  \x0a  now := Date new.\x0a  \x0a  \x22Moving hours arm by small increments\x22\x0a   hoursPosition := ((now hours \x5c\x5c 12) + (now minutes / 60 )) /12 .\x0a   self drawArm: hoursPosition lengthScale: 0.5 weight: 5.\x0a   \x0a   \x22Moving minutes arm by small increments\x22\x0a    minutesPosition := (now minutes + (now seconds / 60))/60.\x0a    self drawArm: minutesPosition lengthScale: 0.80 weight: 3.\x0a\x0a    \x22Moving hour arm by second increments\x22\x0a    secondsPosition := now seconds / 60.\x0a    self drawArm: secondsPosition lengthScale: 0.90 weight: 1.\x0a  ].\x0a\x0a^drawBlock",
 messageSends: ["background:", "new", "/", "+", "minutes", "\x5c\x5c", "hours", "drawArm:lengthScale:weight:", "seconds"],
 referencedClasses: ["Date"]
 }),
@@ -133,6 +134,5 @@ messageSends: ["new", "processing", "draw", "at:put:"],
 referencedClasses: ["ProcessingClock"]
 }),
 smalltalk.ProcessingClock.klass);
-
 
 })(global_smalltalk,global_nil,global__st);

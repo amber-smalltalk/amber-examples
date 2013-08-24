@@ -1,5 +1,6 @@
 (function(smalltalk,nil,_st){
 smalltalk.addPackage('Processing-Examples');
+
 smalltalk.addClass('ProcessingClock', smalltalk.Object, ['processing', 'centerX', 'centerY', 'maxArmLength'], 'Processing-Examples');
 smalltalk.addMethod(
 smalltalk.method({
@@ -16,10 +17,10 @@ return smalltalk.withContext(function($ctx2) {
 _st(self["@processing"])._background_((224));
 now=_st($Date())._new();
 now;
-hoursPosition=_st(_st(_st(_st(_st(now)._hours()).__backslash_backslash((12))).__plus(_st(now)._minutes())).__slash((60))).__slash((12));
+hoursPosition=_st(_st(_st(_st(now)._hours()).__backslash_backslash((12))).__plus(_st(_st(now)._minutes()).__slash((60)))).__slash((12));
 hoursPosition;
 self._drawArm_lengthScale_weight_(hoursPosition,(0.5),(5));
-minutesPosition=_st(_st(_st(_st(now)._minutes()).__plus(_st(now)._seconds())).__slash((60))).__slash((60));
+minutesPosition=_st(_st(_st(now)._minutes()).__plus(_st(_st(now)._seconds()).__slash((60)))).__slash((60));
 minutesPosition;
 self._drawArm_lengthScale_weight_(minutesPosition,(0.8),(3));
 secondsPosition=_st(_st(now)._seconds()).__slash((60));
@@ -103,6 +104,5 @@ _st(processing)._at_put_("draw",block);
 return self}, function($ctx1) {$ctx1.fill(self,"init",{clock:clock,processing:processing,block:block},smalltalk.ProcessingClock.klass)})},
 messageSends: ["new", "processing", "draw", "at:put:"]}),
 smalltalk.ProcessingClock.klass);
-
 
 })(global_smalltalk,global_nil,global__st);
