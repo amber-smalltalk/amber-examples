@@ -1,5 +1,6 @@
-(function(smalltalk,nil,_st){
+define("amber_examples_processing/Processing-Examples", ["amber_vm/smalltalk", "amber_vm/nil", "amber_vm/_st", "amber_core/Kernel-Objects"], function(smalltalk,nil,_st){
 smalltalk.addPackage('Processing-Examples');
+smalltalk.packages["Processing-Examples"].transport = {"type":"amd","amdNamespace":"amber_examples_processing"};
 
 smalltalk.addClass('ProcessingClock', smalltalk.Object, ['processing', 'centerX', 'centerY', 'maxArmLength'], 'Processing-Examples');
 smalltalk.addMethod(
@@ -135,4 +136,4 @@ referencedClasses: ["ProcessingClock"]
 }),
 smalltalk.ProcessingClock.klass);
 
-})(global_smalltalk,global_nil,global__st);
+});

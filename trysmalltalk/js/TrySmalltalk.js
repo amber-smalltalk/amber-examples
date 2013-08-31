@@ -1,5 +1,7 @@
-(function(smalltalk,nil,_st){
+define("amber_examples_profstef/TrySmalltalk", ["amber_vm/smalltalk", "amber_vm/nil", "amber_vm/_st", "amber_core/Kernel-Objects", "amber_core/Canvas"], function(smalltalk,nil,_st){
 smalltalk.addPackage('TrySmalltalk');
+smalltalk.packages["TrySmalltalk"].transport = {"type":"amd","amdNamespace":"amber_examples_profstef"};
+
 smalltalk.addClass('AbstractTutorial', smalltalk.Object, [], 'TrySmalltalk');
 smalltalk.AbstractTutorial.comment="Parent class of all ProfStef tutorials.\x0a\x0aTo create your own tutorial:\x0a- subclass AbstractTutorial\x0a- implement a few methods which returns a Lesson instance\x0a- implement tutorial which returns a Collection of selectors to the methods you've created.";
 smalltalk.addMethod(
@@ -1452,5 +1454,4 @@ referencedClasses: []
 smalltalk.TutorialPlayer);
 
 
-
-})(global_smalltalk,global_nil,global__st);
+});

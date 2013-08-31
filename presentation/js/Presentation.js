@@ -1,5 +1,7 @@
-(function(smalltalk,nil,_st){
+define("amber_examples_presentation/Presentation", ["amber_vm/smalltalk", "amber_vm/nil", "amber_vm/_st", "amber_core/Canvas"], function(smalltalk,nil,_st){
 smalltalk.addPackage('Presentation');
+smalltalk.packages["Presentation"].transport = {"type":"amd","amdNamespace":"amber_examples_presentation"};
+
 smalltalk.addClass('Presentation', smalltalk.Widget, ['currentSlide', 'slides'], 'Presentation');
 smalltalk.addMethod(
 smalltalk.method({
@@ -4205,5 +4207,4 @@ referencedClasses: ["SourceArea"]
 smalltalk.WorkspaceSlide);
 
 
-
-})(global_smalltalk,global_nil,global__st);
+});

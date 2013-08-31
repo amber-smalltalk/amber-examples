@@ -15,7 +15,8 @@ module.exports = function(grunt) {
         src: ['st/Presentation.st'],
         libraries: ['Canvas'],
         output_dir: 'js',
-        deploy: true
+        deploy: true,
+        amd_namespace: 'amber_examples_presentation'
       }
     }
   });

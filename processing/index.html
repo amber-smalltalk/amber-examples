@@ -7,15 +7,17 @@
     <link rel="stylesheet" type="text/css" href='css/style.css' /> 
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
     <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'> 
+	<script type="text/javascript" src="../vendor/amber/support/requirejs/require.min.js"></script>
     <script type='text/javascript' src='../vendor/amber/support/amber.js'></script>
     <script type='text/javascript' src='showdown/showdown.js'></script>
 	<script type="text/javascript" src="processing-1.4.1.js"></script>
   </head> 
   <body> 
-	A Clock made with <a href="http://processingjs.org">Processing.js</a> and <a href"http://amber-lang.net/">Amber</a>
-	<p>Examine the <button onClick="global_smalltalk.Browser._openOn_(global_smalltalk.ProcessingClock)"> ProcessingClock class</button></p> 
+	A Clock made with <a href="http://processingjs.org">Processing.js</a> and <a href="http://amber-lang.net/">Amber</a>
+	<p>Examine the <button onClick="buttonClick()"> ProcessingClock class</button></p> 
 	<p><canvas id="canvas1" width="200" height="200"></canvas></p>
 	<script id="script1" type="text/javascript">
+		var buttonClick;
 		// Simple way to attach js code to the canvas is by using a function
 		function sketchProc(processing) {
 			// Override draw function, by default it will be called 60 times per second
@@ -25,17 +27,22 @@
 		var canvas = document.getElementById("canvas1");
 		// attaching the sketchProc function to the canvas
 		var p = new Processing(canvas, sketchProc);
-	</script>
-	   
-	<script type='text/javascript'> loadAmber(
-		{
-			packages: [ 'Processing-Examples' ],
-            packageHome: './',
-			ready: function(smalltalk) {
-				smalltalk.ProcessingClock._init() 
+		require.config({
+			paths: {
+				'amber_examples_processing': 'js',
+				'amber_examples_processing\_source': 'st'
 			}
-		}) 
-	</script> 
-	
+		});
+		require(['amber/devel','amber_examples_processing/Processing-Examples'],function(smalltalk){
+
+			smalltalk.defaultAMDNamespace = 'amber_examples_processing';
+			smalltalk.initialize();
+			buttonClick = function() {
+				smalltalk.Browser._openOn_(smalltalk.ProcessingClock);
+			};
+			smalltalk.ProcessingClock._init();
+		});
+	</script>
+	   	
   </body> 
 </html> 

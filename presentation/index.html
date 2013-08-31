@@ -1,16 +1,23 @@
 <html>
 <head>
 <title>JTalk - Presentation</title>
+<script src="../vendor/amber/support/requirejs/require.min.js" type="text/javascript"></script>
 <script src="../vendor/amber/support/amber.js" type="text/javascript"></script>
 </head>
 <body>
 
 <script type="text/javascript"> 
-	loadAmber({
-		files: ['Presentation'],
-		packageHome: './'
-		//ready: function() {smalltalk.Browser._openOn_(smalltalk.FOSDEM2012Presentation)}
-	}); 
+	require.config({
+		paths: {
+			'amber_examples_presentation': 'js',
+			'amber_examples_presentation\_source': 'st'
+		}
+	});
+	require(['amber/devel','amber_examples_presentation/Presentation'],function(smalltalk) {
+		smalltalk.defaultAMDNamespace = 'amber_examples_presentation';
+		smalltalk.initialize();
+		smalltalk.Browser._openOn_(smalltalk.FOSDEM2012Presentation);
+	});
 </script>
 
 </body>

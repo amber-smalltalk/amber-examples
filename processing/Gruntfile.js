@@ -14,7 +14,8 @@ module.exports = function(grunt) {
       processing: {
         src: ['st/Processing-Examples.st'],
         output_dir: 'js',
-        deploy: true
+        deploy: true,
+        amd_namespace: 'amber_examples_processing'
       }
     }
   });
