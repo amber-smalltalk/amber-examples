@@ -1,3 +1,4 @@
+(function(smalltalk,nil,_st){
 smalltalk.addPackage('TrySmalltalk');
 smalltalk.addClass('AbstractTutorial', smalltalk.Object, [], 'TrySmalltalk');
 smalltalk.addMethod(
@@ -1083,3 +1084,4 @@ smalltalk.TutorialPlayer);
 
 
 
+})(global_smalltalk,global_nil,global__st);

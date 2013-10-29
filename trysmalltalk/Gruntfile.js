@@ -15,7 +15,8 @@ module.exports = function(grunt) {
         src: ['st/TrySmalltalk.st'],
         libraries: ['Canvas'],
         output_dir: 'js',
-        deploy: true
+        deploy: true,
+        amd_namespace: 'amber_examples_profstef'
       }
     }
   });
