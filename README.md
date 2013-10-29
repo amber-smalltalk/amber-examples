@@ -8,19 +8,21 @@ Getting started
 
 To get started you must first initialize the Git submodules these projects depend on:
 
-git submodule update --init --recursive
+`git submodule update --init --recursive`
+`cd vendor/amber`
+`bower install`  (requires bower to be installed: npm install -g bower)
 
 Afterwards execute one of the start scripts:
 
-start.sh
-start.bat
+`start.sh`  (Linux, OS X)
+`start.bat` (Windows)
 
 and point your browser to
 
 http://localhost:4000/
 
-Using Grunt.js
-==============
+Rebuilding examples using Grunt.js (development mode)
+====================================================
 
 Since Amber 0.10.0 Grunt.js is used as commandline build system.
 To use it with the examples it is first necessary to install all dependencies with
