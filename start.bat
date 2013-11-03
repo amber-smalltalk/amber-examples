@@ -1,1 +1,1 @@
-node vendor/amber/bin/amber-cli.js serve %*
+vendor/amber/bin/amber.bat serve %*
