@@ -1,1 +1,1 @@
-vendor/amber/bin/amber.bat serve %*
+vendor\amber\bin\amber.bat serve %*
