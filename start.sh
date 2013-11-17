@@ -1,2 +1,2 @@
 #! /bin/sh
-node vendor/amber/bin/amber-cli.js serve $@
+vendor/amber/bin/amber serve $@
