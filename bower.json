@@ -1,0 +1,28 @@
+{
+  "name": "amber-examples",
+  "version": "0.0.0",
+  "homepage": "https://github.com/amber-smalltalk/amber-examples",
+  "authors": [
+    "Nicolas Petton<petton.nicolas@gmail.com>",
+    "Thomas Rake <tom.rake@gmail.com>"
+  ],
+  "description": "Examples for amber",
+  "main": "?",
+  "keywords": [
+    "amber",
+    "examples"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.9",
+    "amber": "master"
+  }
+}
