@@ -1,1 +1,1 @@
-vendor\amber\bin\amber.bat serve %*
+bower_components\amber\bin\amber.bat serve %*

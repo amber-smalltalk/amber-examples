@@ -1,2 +1,2 @@
 #! /bin/sh
-vendor/amber/bin/amber serve $@
+bower_components/amber/bin/amber serve $@
