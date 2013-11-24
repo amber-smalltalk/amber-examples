@@ -2,10 +2,6 @@
   "name": "amber-examples",
   "version": "0.0.0",
   "homepage": "https://github.com/amber-smalltalk/amber-examples",
-  "authors": [
-    "Nicolas Petton<petton.nicolas@gmail.com>",
-    "Thomas Rake <tom.rake@gmail.com>"
-  ],
   "description": "Examples for amber",
   "main": "?",
   "keywords": [
@@ -22,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "requirejs": "~2.1.9",
+    "showdown": "~0.3.1",
     "amber": "master"
   }
 }
