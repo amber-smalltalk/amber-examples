@@ -3,23 +3,22 @@ amber-examples
 
 Various amber examples
 
-Getting started
+Web Examples Getting started
 ===============
 
-To get started you must first initialize the Git submodules these projects depend on:
+You should have [NodeJS](http://nodejs.org/) installed. You should also have [Bower](http://bower.io/) installed
+`npm install -g bower`.
 
-`git submodule update --init --recursive`
-`cd vendor/amber`
-`bower install`  (requires bower to be installed: npm install -g bower)
+First clone the amber-examples repository recursively `git clone https:\\github.com\amber-examples.git --recursive`.
+Next because amber-example uses bower you must do a `bower install` from the cloned repository.
 
-Afterwards execute one of the start scripts:
+
+To start the file server execute one of the start scripts:
 
 `start.sh`  (Linux, OS X)
-`start.bat` (Windows)
+`start.bat` (Windows) or click on this to start the server.
 
-and point your browser to
-
-http://localhost:4000/
+and point your browser to `http://localhost:4000/`
 
 Rebuilding examples using Grunt.js (development mode)
 ====================================================

@@ -1,0 +1,24 @@
+{
+  "name": "amber-examples",
+  "version": "0.0.0",
+  "homepage": "https://github.com/amber-smalltalk/amber-examples",
+  "description": "Examples for amber",
+  "main": "?",
+  "keywords": [
+    "amber",
+    "examples"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "~0.3.1",
+    "amber": ">=0.12.2"
+  }
+}
