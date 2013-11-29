@@ -19,6 +19,6 @@
   ],
   "dependencies": {
     "showdown": "~0.3.1",
-    "amber": "master"
+    "amber": "0.12.2"
   }
 }
