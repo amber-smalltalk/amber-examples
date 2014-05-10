@@ -679,8 +679,11 @@ ProfStef methodDictionary.
 "Let''s create a new method to go to the next lesson:"
 
 |newMethod|
-newMethod := Compiler new load: ''goToNextLesson ProfStef next.'' forClass: ProfStef.
-ProfStef class addCompiledMethod: newMethod
+newMethod := Compiler new 
+	install: ''goToNextLesson ProfStef next.'' 
+	forClass: ProfStef 
+	category: ''navigation''.
+ProfStef class addCompiledMethod: newMethod.
 
 "Wow!! I can''t wait to use my new method!!"
 
