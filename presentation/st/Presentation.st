@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'Presentation'!
+Smalltalk createPackage: 'Presentation'!
 Widget subclass: #Presentation
 	instanceVariableNames: 'currentSlide slides'
 	package: 'Presentation'!
