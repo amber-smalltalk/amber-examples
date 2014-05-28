@@ -72,10 +72,10 @@ tinyBenchmarks
 
 jsbenchFib
  
-	<if (this < 2) {
+	<if (self < 2) {
 return 1;
 } else {
-return (this-1)._jsbenchFib() + (this-2)._jsbenchFib() + 1;}>
+return (self-1)._jsbenchFib() + (self-2)._jsbenchFib() + 1;}>
 !
 
 jsbenchmark
@@ -83,7 +83,7 @@ jsbenchmark
 <
 var size = 8190;
 var count;
-for (var z=0;z<this;z++) {
+for (var z=0;z<self;z++) {
   count = 0;
   var flags = new Array();
   for (var p=0; p<size; p++) {
