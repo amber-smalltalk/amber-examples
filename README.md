@@ -6,20 +6,24 @@ Various amber examples
 Getting started
 ===============
 
-To get started you must first initialize the Git submodules these projects depend on:
+To get started you must first get the tools for this project:
 
-`git submodule update --init --recursive`
-`cd vendor/amber`
-`bower install`  (requires bower to be installed: npm install -g bower)
+    npm install -g amber-cli
+    npm install -g bower
 
-Afterwards execute one of the start scripts:
+ and dependencies of this project:
+ 
+    git submodule update --init --recursive
+    npm install
+    bower install
 
-`start.sh`  (Linux, OS X)
-`start.bat` (Windows)
+Afterwards execute the server:
+
+`amber serve`
 
 and point your browser to
 
-http://localhost:4000/
+`http://localhost:4000/`
 
 Rebuilding examples using Grunt.js (development mode)
 ====================================================
