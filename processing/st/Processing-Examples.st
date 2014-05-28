@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'Processing-Examples'!
+Smalltalk createPackage: 'Processing-Examples'!
 Object subclass: #ProcessingClock
 	instanceVariableNames: 'processing centerX centerY maxArmLength'
 	package: 'Processing-Examples'!

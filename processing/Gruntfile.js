@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.loadTasks('../vendor/amber/grunt/tasks/');
+  grunt.loadNpmTasks('../../node_modules/amber-dev');
 
   grunt.registerTask('default', ['amberc:processing']);
 
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     amberc: {  
       options: {
-        amber_dir: '../vendor/amber',
+        amber_dir: '../bower_components/amber',
         closure_jar: ''
       },
       processing: {
