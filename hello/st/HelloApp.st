@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'HelloApp'!
+Smalltalk createPackage: 'HelloApp'!
 Object subclass: #Hello
 	instanceVariableNames: ''
 	package: 'HelloApp'!

@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>My First Amber Project</title>
-    <script src="../vendor/amber/support/amber.js"></script>
-    <script src="../vendor/amber/support/requirejs/require.min.js"></script>
+    <script src="../bower_components/amber/support/amber.js"></script>
+    <script src="../bower_components/amber/support/requirejs/require.min.js"></script>
     <script type="text/javascript">
       require.config({ paths: {
         'com_example_hello': 'js', //mapping compiled .js files
@@ -19,7 +19,7 @@
   <body>
     <article>
       <h1>My First Amber Project</h1>
-      <button onclick="require('amber_vm/smalltalk').Browser._open()">class browser</button>
+      <button onclick="require('amber/helpers').globals.Browser._open()">class browser</button>
       <button id="sayHello">say hello</button>
     </article>
   </body>
