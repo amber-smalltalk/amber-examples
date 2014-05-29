@@ -1,7 +1,7 @@
-define("amber_examples_hello/HelloApp", ["amber/boot", "amber_core/Kernel-Objects"], function($boot){
+define("com_examples_hello/HelloApp", ["amber/boot", "amber_core/Kernel-Objects"], function($boot){
 var smalltalk=$boot.vm,nil=$boot.nil,_st=$boot.asReceiver,globals=$boot.globals;
 smalltalk.addPackage('HelloApp');
-smalltalk.packages["HelloApp"].transport = {"type":"amd","amdNamespace":"amber_examples_hello"};
+smalltalk.packages["HelloApp"].transport = {"type":"amd","amdNamespace":"com_examples_hello"};
 
 smalltalk.addClass('Hello', globals.Object, [], 'HelloApp');
 smalltalk.addMethod(

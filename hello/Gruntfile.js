@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         libraries: ['Web'],
         output_dir: 'js',
         deploy: true,
-        amd_namespace: 'amber_examples_hello'
+        amd_namespace: 'com_examples_hello'
       }
     }
   });
