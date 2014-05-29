@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('../../node_modules/amber-dev');
 
-  grunt.registerTask('default', ['amberc:processing']);
+  grunt.registerTask('default', ['amberc:hello']);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('../package.json'),
@@ -11,11 +11,12 @@ module.exports = function(grunt) {
         amber_dir: '../bower_components/amber',
         closure_jar: ''
       },
-      processing: {
-        src: ['st/Processing-Examples.st'],
+      hello: {
+        src: ['st/HelloApp.st'],
+        libraries: ['Web'],
         output_dir: 'js',
         deploy: true,
-        amd_namespace: 'amber_examples_processing'
+        amd_namespace: 'amber_examples_hello'
       }
     }
   });

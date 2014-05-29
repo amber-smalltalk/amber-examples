@@ -1,0 +1,25 @@
+{
+  "name": "amber-examples",
+  "version": "0.1.0",
+  "homepage": "https://github.com/herby/amber-examples",
+  "description": "Amber Examples",
+  "keywords": [
+    "javascript",
+    "smalltalk",
+    "language",
+    "compiler",
+    "web"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amber": "master"
+  }
+}

@@ -1,2 +1,2 @@
-#!/bin/bash
-time node Program.js $@
+#!/bin/sh
+time node Program.js $@ || echo "Run 'grunt amberc:benchfib' from parent directory to build."

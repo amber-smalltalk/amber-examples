@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.loadTasks('../vendor/amber/grunt/tasks/');
+  grunt.loadNpmTasks('../../node_modules/amber-dev');
 
   grunt.registerTask('default', ['amberc:trysmalltalk']);
 
@@ -8,12 +8,12 @@ module.exports = function(grunt) {
 
     amberc: {  
       options: {
-        amber_dir: '../vendor/amber',
+        amber_dir: '../bower_components/amber',
         closure_jar: ''
       },
       trysmalltalk: {
         src: ['st/TrySmalltalk.st'],
-        libraries: ['Canvas'],
+        libraries: ['Web'],
         output_dir: 'js',
         deploy: true,
         amd_namespace: 'amber_examples_profstef'

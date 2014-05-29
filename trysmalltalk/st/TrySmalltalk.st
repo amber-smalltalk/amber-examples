@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'TrySmalltalk'!
+Smalltalk createPackage: 'TrySmalltalk'!
 Object subclass: #AbstractTutorial
 	instanceVariableNames: ''
 	package: 'TrySmalltalk'!
