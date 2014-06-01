@@ -682,7 +682,7 @@ ProfStef methodDictionary.
 newMethod := Compiler new
 	install: ''goToNextLesson ProfStef next.''
 	forClass: ProfStef
-	category: ''navigation''.
+	protocol: ''navigation''.
 ProfStef class addCompiledMethod: newMethod
 
 "Wow!! I can''t wait to use my new method!!"
