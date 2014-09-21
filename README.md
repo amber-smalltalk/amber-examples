@@ -27,10 +27,12 @@ Getting started
 ===============
 
 Clone the repository 
+
     git clone https://github.com/amber-smalltalk/amber-examples.git
 
 Get dependencies of this project:
- 
+
+    cd amber-examples 
     git submodule update --init --recursive
     npm install
     bower install
