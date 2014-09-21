@@ -20,6 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "amber": "master"
+    "amber": "^0.12.6"
   }
 }
