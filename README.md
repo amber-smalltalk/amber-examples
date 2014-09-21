@@ -61,3 +61,9 @@ the subdirectory of each example:
 `grunt`
 
 The subdirectories might contain additional README files which might contain additional information.
+
+
+Status
+======
+
+- Loads fine with Amber version 0.12.6
