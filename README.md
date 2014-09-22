@@ -9,9 +9,10 @@ Prerequisites
 =============
 
 1. A web browser with reasonably good support for HTML5 canvas.
-2. [nodejs](http://www.nodejs.org/). This will give you the node package manager `npm` as well.
-3. A global install of the [`amber`](http://amber-lang.net/) [npm](http://npmjs.org/) package
-4. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
+2. git, on MSWindows [mysysGit](http://msysgit.github.com/)
+3. [nodejs](http://www.nodejs.org/). This will give you the node package manager `npm` as well.
+4. A global install of the [`amber`](http://amber-lang.net/) [npm](http://npmjs.org/) package
+5. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
 
 The `amber` and `bower` packages can be installed with the following command (In some cases you have to call `npm` with `sudo npm`):
 
