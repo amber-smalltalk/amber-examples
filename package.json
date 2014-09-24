@@ -10,6 +10,9 @@
     "compiler",
     "web"
   ],
+  "repository" : { "type" : "git"
+  , "url" : "https://github.com/amber-smalltalk/amber-examples.git"
+  },
   "engines": {
     "node": ">=0.10.0"
   },
