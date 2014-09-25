@@ -17,7 +17,7 @@ The `amber` and `bower` packages can be installed with the following command (In
 
     npm install --global amber-cli bower
 
-or the same thing, but less typing:
+or as short form:
 
     npm i -g amber-cli bower
     
@@ -71,7 +71,7 @@ Notes
 =====
 
 - Since Amber version 0.10.0 [`grunt`](http://gruntjs.com/) is used as commandline build system.
-- `grunt-cli`: The grunt package gets installed locally into every project by  `npm install`.
+- `grunt`: The grunt package gets installed locally into every project by  `npm install`. This is specified by the `devDependencies` attribute in [package.json](https://github.com/amber-smalltalk/amber-examples/blob/master/package.json).
 - For the global and local installation of the `amber-cli` and `bower` command line tools: The recommendation is to install them with the `-g` or `--global` option to be globally accessible. For some uses of these tools it is  taken it for granted they are installed globally.  So if you use a restricted environment where you  cannot install the command line tools globally, try do it locally and some tools might still work. There will be feedback messages if there are problems with this. For a local installation use your home directory or a subdirectory ~/bin of it. Run the  `npm` install commands without without the `-g` option, and you will find all the commands in the `dir_used/node_modules/.bin` subdirectory. Generally a local installation is not recommended.
 
 
