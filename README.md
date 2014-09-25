@@ -12,7 +12,7 @@ Tools needed
 3. [nodejs](http://www.nodejs.org/). This will give you the node package manager `npm` as well.
 4. A global install of the [`amber`](http://amber-lang.net/) [npm](http://npmjs.org/) package
 5. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
-6. A global install of the [`gruntjs`](http://gruntjs.com/) task runner which is used as the command line build system 
+6. A global install of the [`grunt`](http://gruntjs.com/) task runner which is used as the command line build system 
 
 The `amber` and `bower` packages can be installed with the following command (In some cases you have to call `npm` with `sudo npm`):
 
@@ -71,7 +71,7 @@ The subdirectories might contain additional README files which might contain add
 Notes
 =====
 
-- Since Amber 0.10.0 Grunt.js is used as commandline build system.
+- Since Amber version 0.10.0 [`grunt`](http://gruntjs.com/) is used as commandline build system.
 
 
 Status
