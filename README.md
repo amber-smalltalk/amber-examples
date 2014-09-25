@@ -10,7 +10,7 @@ Tools needed
 1. A web browser with reasonably good support for HTML5 canvas.
 2. git, on Windows [Git for Windows](http://msysgit.github.com/)
 3. [nodejs](http://www.nodejs.org/). This will give you the node package manager `npm` as well.
-4. A global install of the [`amber`](http://amber-lang.net/) [npm](http://npmjs.org/) package
+4. A global install of the [`amber-cli`](http://amber-lang.net/) [npm](http://npmjs.org/) package
 5. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
 6. A global install of the [`grunt-cli`](http://gruntjs.com/) task runner which is used as the command line build system 
 
