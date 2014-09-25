@@ -12,15 +12,14 @@ Tools needed
 3. [nodejs](http://www.nodejs.org/). This will give you the node package manager `npm` as well.
 4. A global install of the [`amber-cli`](http://amber-lang.net/) [npm](http://npmjs.org/) package
 5. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
-6. A global install of the [`grunt-cli`](http://gruntjs.com/) task runner which is used as the command line build system 
 
 The `amber` and `bower` packages can be installed with the following command (In some cases you have to call `npm` with `sudo npm`):
 
-    npm install --global amber-cli bower grunt-cli
+    npm install --global amber-cli bower
 
 or the same thing, but less typing:
 
-    npm i -g amber-cli bower grunt-cli
+    npm i -g amber-cli bower
     
 
 Reference: http://docs.amber-lang.net/js-glossary.html
@@ -72,8 +71,8 @@ Notes
 =====
 
 - Since Amber version 0.10.0 [`grunt`](http://gruntjs.com/) is used as commandline build system.
-- `grunt-cli`: The grunt package gets installed locally into every project by the grunt-cli.
-- For the global and local installation of the `amber-cli`, `bower` and `grunt-cli` command line tools: The recommendation is to install them with the `-g` or `--global` option to be globally accessible. For some uses of these tools it is  taken it for granted they are installed globally.  So if you use a restricted environment where you  cannot install the command line tools globally, try do it locally and some tools might still work. There will be feedback messages if there are problems with this. For a local installation use your home directory or a subdirectory ~/bin of it. Run the  `npm` install commands without without the `-g` option, and you will find all the commands in the `dir_used/node_modules/.bin` subdirectory. Generally a local installation is not recommended.
+- `grunt-cli`: The grunt package gets installed locally into every project by  `npm install`.
+- For the global and local installation of the `amber-cli` and `bower` command line tools: The recommendation is to install them with the `-g` or `--global` option to be globally accessible. For some uses of these tools it is  taken it for granted they are installed globally.  So if you use a restricted environment where you  cannot install the command line tools globally, try do it locally and some tools might still work. There will be feedback messages if there are problems with this. For a local installation use your home directory or a subdirectory ~/bin of it. Run the  `npm` install commands without without the `-g` option, and you will find all the commands in the `dir_used/node_modules/.bin` subdirectory. Generally a local installation is not recommended.
 
 
 Status
