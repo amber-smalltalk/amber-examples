@@ -1,7 +1,7 @@
 amber-examples
 ==============
 
-This project contains various Amber Smalltalk  examples. Amber may run in a web browser or as a command line program.
+This project contains various [Amber Smalltalk](http://amber-lang.net/)  examples. Amber may run in a web browser or as a command line program.
 
 
 Tools needed
@@ -77,4 +77,4 @@ Notes
 Status
 ======
 
-- Loads fine with Amber version 0.12.6
+- Loads fine with [Amber](https://github.com/amber-smalltalk) version 0.12.6
