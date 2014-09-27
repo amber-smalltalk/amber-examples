@@ -75,6 +75,16 @@ Notes
 - For the global and local installation of the `amber-cli` and `bower` command line tools: The recommendation is to install them with the `-g` or `--global` option to be globally accessible. For some uses of these tools it is  taken it for granted they are installed globally.  So if you use a restricted environment where you  cannot install the command line tools globally, try do it locally and some tools might still work. There will be feedback messages if there are problems with this. For a local installation use your home directory or a subdirectory ~/bin of it. Run the  `npm` install commands without without the `-g` option, and you will find all the commands in the `dir_used/node_modules/.bin` subdirectory. Generally a local installation is not recommended.
 
 
+Troubleshooting
+===============
+
+**SayHello example (Web) does not work**
+:    check in the web console which files cannot be loaded. Does the ``bower_components`` contain subfolders?
+     Maybe the ``bower install`` command did not run fully? Or there was a problem with ``npm install``?
+     Sometimes internet connection is slow and you have to re-run the commands.
+     
+
+
 Status
 ======
 
