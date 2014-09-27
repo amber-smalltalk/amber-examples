@@ -14,7 +14,7 @@ Tools needed
 5. A global install of the [`bower`](http://bower.io/) client side package manager in order to install the dependencies
 6. A global install of the [`grunt-cli`](http://gruntjs.com/) task runner which is used as the command line build system 
 
-The `amber` and `bower` packages can be installed with the following command (In some cases you have to call `npm` with `sudo npm`):
+The `amber`, `bower` and `grunt-cli` packages can be installed with the following command (In some cases you have to call `npm` with `sudo npm`):
 
     npm install --global amber-cli bower grunt-cli
 
@@ -79,9 +79,9 @@ Troubleshooting
 ===============
 
 **SayHello example (Web) does not work**
-:    check in the web console which files cannot be loaded. Does the ``bower_components`` contain subfolders?
+:    check in the web console which files cannot be loaded. Does the folder ``bower_components`` contain subfolders?
      Maybe the ``bower install`` command did not run fully? Or there was a problem with ``npm install``?
-     Sometimes internet connection is slow and you have to re-run the commands.
+     Sometimes internet connection is slow and you have to re-run these commands.
      
 
 
