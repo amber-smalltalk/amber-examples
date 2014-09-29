@@ -44,7 +44,7 @@ Get dependencies of this project:
 Amber in the browser  
 ==========================
 
-Amber runs in the browser and this includes an IDE. 
+Amber runs in the browser and this includes an IDE. The ``amber`` subdirectory of ``bower_components`` is used.
 
 To have access to this start a small web server:
 
@@ -65,7 +65,7 @@ Build or recompile a command line example  (e.g. nodejs) by executing
 
 in the subdirectory.
 
-The subdirectories might contain additional README files which might contain additional information.
+The subdirectories might contain additional README files which might contain additional information. Here the ``amber-dev`` subdirectory of ``node_modules`` is used.
 
 
 Notes
