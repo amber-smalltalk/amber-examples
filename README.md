@@ -84,6 +84,16 @@ Troubleshooting
      Sometimes internet connection is slow and you have to re-run these commands.
      
 
+Other examples
+==============
+
+
+- [ToDo List](https://github.com/hhzl/Amber-ToDo-List)
+- [Ludus](https://github.com/bromagosa/Ludus) game framework
+- [Graphical libraries](https://github.com/hhzl/Amber-Graphical-Libraries-Demo)
+- [Benevoles](https://github.com/vicnet/benevoles) (Manage rewards for volunteers)
+
+
 
 Status
 ======
