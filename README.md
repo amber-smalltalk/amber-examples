@@ -65,7 +65,7 @@ Build or recompile a command line example  (e.g. nodejs) by executing
 
 in the subdirectory.
 
-The subdirectories might contain additional README files which might contain additional information. Here the ``amber-dev`` subdirectory of ``node_modules`` is used.
+The subdirectories might contain additional README files which might contain additional information. Here the code in ``amber-dev`` subdirectory of ``node_modules`` and ``bower_components/amber`` is used.
 
 
 Notes
