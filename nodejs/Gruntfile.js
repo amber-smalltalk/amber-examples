@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('../../node_modules/amber-dev');
+  grunt.loadNpmTasks('../node_modules/amber-dev');
 
   grunt.registerTask('default', ['amberc:hello']);
 
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     amberc: {
       options: {
-        amber_dir: '../node_modules/amber',
+        amber_dir: 'node_modules/amber',
         closure_jar: ''
       },
       hello: {

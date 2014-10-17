@@ -1,0 +1,25 @@
+{
+  "name": "amber-nodejs-examples",
+  "version": "0.13.0",
+  "description": "Amber Nodejs Examples",
+  "homepage": "http://amber-lang.net",
+  "keywords": [
+    "javascript",
+    "smalltalk",
+    "language",
+    "compiler",
+    "web"
+  ],
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/amber-smalltalk/amber-examples.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "amber": "^0.13.1",
+    "amber-dev": "^0.2.2"
+  }
+}
