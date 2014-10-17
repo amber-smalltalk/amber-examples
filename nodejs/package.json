@@ -18,7 +18,7 @@
     "node": ">=0.10.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
+    "grunt": "^0.4.0",
     "amber": "^0.13.1",
     "amber-dev": "^0.2.2"
   }
