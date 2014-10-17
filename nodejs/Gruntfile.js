@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     amberc: {
       options: {
-        amber_dir: '../bower_components/amber',
+        amber_dir: '../node_modules/amber',
         closure_jar: ''
       },
       hello: {
