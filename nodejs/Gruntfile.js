@@ -17,6 +17,12 @@ module.exports = function(grunt) {
         amd_namespace: 'amber_examples_hello',
         output_name: 'hello/Program'
       },
+      writefile: {
+        src: ['writefile/WriteFile.st'],
+        main_class: 'WriteFile',
+        amd_namespace: 'amber_examples_hello',
+        output_name: 'writefile/Program'
+      },
       benchfib: {
         src: ['benchfib/Benchfib.st'],
         main_class: 'Benchfib',
