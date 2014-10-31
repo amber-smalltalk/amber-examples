@@ -4,14 +4,11 @@ module.exports = function (grunt) {
     var path = require('path');
 
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.loadNpmTasks('grunt-execute');
     grunt.loadNpmTasks('amber-dev');
 
     // Default task.
     grunt.registerTask('default', ['amberc:all']);
-    grunt.registerTask('test', ['amberc:test_runner', 'execute:test_runner', 'clean:test_runner']);
     grunt.registerTask('devel', ['amdconfig:app', 'requirejs:devel']);
     grunt.registerTask('deploy', ['amdconfig:app', 'requirejs:deploy']);
 
@@ -34,22 +31,10 @@ module.exports = function (grunt) {
             all: {
                 src: [
                     'src/Presentation.st', // list all sources in dependency order
-                    'src/Presentation-Tests.st' // list all tests in dependency order
                 ],
                 amd_namespace: 'amber-presentation',
-                libraries: ['SUnit', 'Web']
+                libraries: ['Web']
             },
-            test_runner: {
-                src: ['node_modules/amber-dev/lib/Test.st'],
-                libraries: [
-                    /* add dependencies packages here */
-                    'Presentation', /* add other code-to-test packages here */
-                    'SUnit',
-                    'Presentation-Tests' /* add other test packages here */
-                ],
-                main_class: 'NodeTestRunner',
-                output_name: 'test_runner'
-            }
         },
 
         amdconfig: {app: {dest: 'config.js'}},
@@ -75,16 +60,6 @@ module.exports = function (grunt) {
                 include: ['config', 'node_modules/requirejs/require'],
                 out: "the.js"
             }}
-        },
-
-        execute: {
-            test_runner: {
-                src: ['test_runner.js']
-            }
-        },
-
-        clean: {
-            test_runner: ['test_runner.js']
         }
     });
 
