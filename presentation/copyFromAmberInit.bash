@@ -1,9 +1,0 @@
-cp ../../amberinit/deploy.js .
-cp ../../amberinit/Gruntfile.js .
-cp ../../amberinit/LICENSE-MIT .
-cp ../../amberinit/README.md .
-cp ../../amberinit/bower.json .
-cp ../../amberinit/devel.js .
-cp ../../amberinit/index.html .
-cp ../../amberinit/local.amd.json .
-cp ../../amberinit/package.json .
