@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('../../node_modules/amber-dev');
+  grunt.loadNpmTasks('../node_modules/amber-dev');
 
   grunt.registerTask('default', ['amberc:hello']);
 
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     amberc: {
       options: {
-        amber_dir: '../bower_components/amber',
+        amber_dir: 'node_modules/amber',
         closure_jar: ''
       },
       hello: {
@@ -16,6 +16,12 @@ module.exports = function(grunt) {
         main_class: 'Hello',
         amd_namespace: 'amber_examples_hello',
         output_name: 'hello/Program'
+      },
+      writefile: {
+        src: ['writefile/WriteFile.st'],
+        main_class: 'WriteFile',
+        amd_namespace: 'amber_examples_hello',
+        output_name: 'writefile/Program'
       },
       benchfib: {
         src: ['benchfib/Benchfib.st'],
