@@ -1,26 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <title>My First Amber Project</title>
-    <script src="../bower_components/amber/support/amber.js"></script>
-    <script src="../bower_components/amber/support/requirejs/require.min.js"></script>
-    <script type="text/javascript">
-      require.config({ paths: {
-        'com_examples_hello': 'js', //mapping compiled .js files
-        'com_examples_hello/_source': 'st' //mapping smalltalk source files
-      }});
-      require(['amber/devel','com_examples_hello/HelloApp'], function (smalltalk) {
-        smalltalk.defaultAmdNamespace = "com_examples_hello"; //used for all new packages in IDE
-        smalltalk.initialize();
-        smalltalk.Hello._new()._begin();
-      });
-    </script>
+    <title>Hello Application</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hhzl" />
+    <script type='text/javascript' src='the.js'></script>
   </head>
+
   <body>
-    <article>
-      <h1>My First Amber Project</h1>
-      <button onclick="require('amber/helpers').globals.Browser._open()">class browser</button>
-      <button id="sayHello">say hello</button>
-    </article>
+  <p>Hi, hhzl! Welcome to Amber project: "Hello Application".</p>
+  <p>This is the place for your application's HTML. After getting familiar with Amber,
+      just remove this welcome contents from index.html and replace it with your own.</p>
+  <button id="amber-with">Hello from TagBrush >> with:</button>
+  <button id="jquery-append">Hello from jQuery append</button>
+  <ol id="output-list"></ol>
+  <script type='text/javascript'>
+      require(['app'], function (amber) {
+          amber.initialize({
+            //used for all new packages in IDE
+            'transport.defaultAmdNamespace': "amber-helloapp"
+          });
+          require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
+          amber.globals.HelloApp._start();
+      });
+  </script>
   </body>
+
 </html>
