@@ -14,8 +14,8 @@ To run these examples do
     grunt amberc:meta	
 
 
-hello           - Hello world example with a simple Makefile.
-benchfib        - Port of tinybenchmarks from Squeak.
-trivialserver   - A slightly larger example.
+- **hello** Hello world example with a simple Makefile.
+- **benchfib** Port of tinybenchmarks from Squeak.
+- **trivialserver** A slightly larger example.
 
 
