@@ -1,48 +1,30 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <title>using Processing.js with Amber Smalltalk</title> 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-    <meta name="author" content="Stefan Krecher" /> 
-    <link rel="stylesheet" type="text/css" href='css/style.css' />
-    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
-    <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'> 
-	<script type="text/javascript" src="../bower_components/amber/support/requirejs/require.min.js"></script>
-    <script type='text/javascript' src='../bower_components/amber/support/amber.js'></script>
-    <script type='text/javascript' src='showdown/showdown.js'></script>
-	<script type="text/javascript" src="processing-1.4.1.js"></script>
-  </head> 
-  <body> 
-	A Clock made with <a href="http://processingjs.org">Processing.js</a> and <a href="http://amber-lang.net/">Amber</a>
-	<p>Examine the <button onClick="buttonClick()"> ProcessingClock class</button></p> 
-	<p><canvas id="canvas1" width="200" height="200"></canvas></p>
-	<script id="script1" type="text/javascript">
-		var buttonClick;
-		// Simple way to attach js code to the canvas is by using a function
-		function sketchProc(processing) {
-			// Override draw function, by default it will be called 60 times per second
-			processing.draw = function() {};
-		}
+<!DOCTYPE html>
+<html>
 
-		var canvas = document.getElementById("canvas1");
-		// attaching the sketchProc function to the canvas
-		var p = new Processing(canvas, sketchProc);
-		require.config({
-			paths: {
-				'amber_examples_processing': 'js',
-				'amber_examples_processing/_source': 'st'
-			}
-		});
-		require(['amber/devel','amber_examples_processing/Processing-Examples'],function(smalltalk){
+  <head>
+    <title>Amber Processing Example</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hhzl" />
+    <script type='text/javascript' src='the.js'></script>
+  </head>
 
-			smalltalk.defaultAmdNamespace = 'amber_examples_processing';
-			smalltalk.initialize();
-			buttonClick = function() {
-				smalltalk.Browser._openOn_(smalltalk.ProcessingClock);
-			};
-			smalltalk.ProcessingClock._init();
-		});
-	</script>
-	   	
-  </body> 
-</html> 
+  <body>
+  <p>Hi, hhzl! Welcome to Amber project: "Amber Processing Example".</p>
+  <p>This is the place for your application's HTML. After getting familiar with Amber,
+      just remove this welcome contents from index.html and replace it with your own.</p>
+  <button id="amber-with">Hello from TagBrush >> with:</button>
+  <button id="jquery-append">Hello from jQuery append</button>
+  <ol id="output-list"></ol>
+  <script type='text/javascript'>
+      require(['app'], function (amber) {
+          amber.initialize({
+            //used for all new packages in IDE
+            'transport.defaultAmdNamespace': "amber-processingclock"
+          });
+          require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
+          amber.globals.ProcessingClock._start();
+      });
+  </script>
+  </body>
+
+</html>
