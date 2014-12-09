@@ -1,7 +1,7 @@
 define([
     'amber/deploy',
     // --- packages to be deployed begin here ---
-    'amber-processingclock/ProcessingClock'
+    'amber-processingclock/Processing-Examples'
     // --- packages to be deployed end here ---
 ], function (amber) {
     return amber;

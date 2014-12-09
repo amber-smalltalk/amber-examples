@@ -11,7 +11,6 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['amberc:all']);
-    grunt.registerTask('test', ['amberc:test_runner', 'execute:test_runner', 'clean:test_runner']);
     grunt.registerTask('devel', ['amdconfig:app', 'requirejs:devel']);
     grunt.registerTask('deploy', ['amdconfig:app', 'requirejs:deploy']);
 
@@ -33,22 +32,10 @@ module.exports = function (grunt) {
             },
             all: {
                 src: [
-                    'src/ProcessingClock.st', // list all sources in dependency order
-                    'src/ProcessingClock-Tests.st' // list all tests in dependency order
+                    'src/Processing-Examples.st' // list all sources in dependency order
                 ],
                 amd_namespace: 'amber-processingclock',
                 libraries: ['SUnit', 'Web']
-            },
-            test_runner: {
-                src: ['node_modules/amber-dev/lib/Test.st'],
-                libraries: [
-                    /* add dependencies packages here */
-                    'ProcessingClock', /* add other code-to-test packages here */
-                    'SUnit',
-                    'ProcessingClock-Tests' /* add other test packages here */
-                ],
-                main_class: 'NodeTestRunner',
-                output_name: 'test_runner'
             }
         },
 
@@ -75,17 +62,8 @@ module.exports = function (grunt) {
                 include: ['config', 'node_modules/requirejs/require'],
                 out: "the.js"
             }}
-        },
-
-        execute: {
-            test_runner: {
-                src: ['test_runner.js']
-            }
-        },
-
-        clean: {
-            test_runner: ['test_runner.js']
         }
+
     });
 
 };
