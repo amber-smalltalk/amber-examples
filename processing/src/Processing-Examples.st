@@ -67,5 +67,10 @@ clock := ProcessingClock new .
 processing := clock processing.
 block := clock draw.
 processing at: 'draw' put: block
+!
+
+start
+
+     self init
 ! !
 
