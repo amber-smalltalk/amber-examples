@@ -3874,12 +3874,12 @@ selector: "codeSnippet",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return "var counter = window.smalltalk.Counter._new();\x0acounter._appendToJQuery_($('#jsToSmalltalk'));";
+return "var counter = window.smalltalk.Counter._new();\x0acounter._appendToJQuery_(jQuery('#jsToSmalltalk'));";
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: [],
-source: "codeSnippet\x0a\x09^\x0a'var counter = window.smalltalk.Counter._new();\x0acounter._appendToJQuery_($(''#jsToSmalltalk''));'.",
+source: "codeSnippet\x0a\x09^\x0a'var counter = window.smalltalk.Counter._new();\x0acounter._appendToJQuery_(jQuery(''#jsToSmalltalk''));'.",
 referencedClasses: [],
 //>>excludeEnd("ide");
 messageSends: []
