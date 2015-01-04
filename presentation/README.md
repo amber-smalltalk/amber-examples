@@ -1,6 +1,6 @@
-# Hello Application
+# Amber presentation
 
-Result of amber init
+Amber Smalltalk Presentation written in Amber
 
 ## Getting Started
 

@@ -1756,7 +1756,7 @@ FOSDEMSlide subclass: #FOSDEMJSToSmalltalk
 codeSnippet
 	^
 'var counter = window.smalltalk.Counter._new();
-counter._appendToJQuery_($(''#jsToSmalltalk''));'.
+counter._appendToJQuery_(jQuery(''#jsToSmalltalk''));'.
 !
 
 cssClass

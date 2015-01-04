@@ -1,6 +1,6 @@
-# Hello Application
+# TrySmalltalk
 
-Result of amber init
+Tutorial to learn Smalltalk
 
 ## Getting Started
 
