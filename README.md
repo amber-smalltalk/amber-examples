@@ -84,6 +84,14 @@ Troubleshooting
      Sometimes internet connection is slow and you have to re-run these commands.
      
 
+Status
+======
+
+- All examples but the android example work fine with with [Amber](https://github.com/amber-smalltalk) version 0.13.
+- For the processingJS example see work in progress [here](https://github.com/HeSe/amber-processingJs)
+- The trysmalltalk example has been moved to its [own repository](https://github.com/amber-smalltalk/trysmalltalk) for version 0.14
+
+
 Other examples
 ==============
 
@@ -98,8 +106,3 @@ Version 0.13
 
 - https://github.com/philippeback/poly/tree/port0132
 - https://github.com/philippeback/gdev
-
-Status
-======
-
-- Loads fine with [Amber](https://github.com/amber-smalltalk) version 0.12.6
