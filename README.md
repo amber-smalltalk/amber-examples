@@ -1,11 +1,11 @@
-amber-examples
-==============
+Amber Smalltalk Examples
+========================
 
 This project contains various [Amber Smalltalk](http://amber-lang.net/)  examples. Amber may run in a web browser or as a command line program.
 
 
 Tools needed
-=============
+------------
 
 1. A web browser with reasonably good support for HTML5 canvas.
 2. git, on Windows [Git for Windows](http://msysgit.github.com/)
@@ -27,7 +27,7 @@ Reference: http://docs.amber-lang.net/js-glossary.html
 
 
 Setting up amber-examples 
-==========================
+-------------------------
 
 Clone the repository 
 
@@ -42,7 +42,7 @@ Get dependencies of this project:
 
 
 Amber in the browser  
-==========================
+--------------------
 
 Amber runs in the browser and this includes an IDE. The ``amber`` subdirectory of ``bower_components`` is used.
 
@@ -56,7 +56,7 @@ and point your browser to
 
 
 Amber on the command line 
-====================================================
+-------------------------
 
 
 Build or recompile a command line example  (e.g. nodejs) by executing 
