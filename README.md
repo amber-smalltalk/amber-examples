@@ -97,7 +97,6 @@ Other examples
 
 Version 0.12 and earlier
 
-- [ToDo List](https://github.com/hhzl/Amber-ToDo-List)
 - [Ludus](https://github.com/bromagosa/Ludus) game framework
 - [Graphical libraries](https://github.com/hhzl/Amber-Graphical-Libraries-Demo)
 - [Benevoles](https://github.com/vicnet/benevoles) (Manage rewards for volunteers)
@@ -107,6 +106,7 @@ Version 0.13
 - https://github.com/philippeback/poly/tree/port0132
 - https://github.com/philippeback/gdev
 
-Version 0.14
+Version 0.14.1
 
 - https://github.com/amber-smalltalk/trysmalltalk
+- [ToDo List](https://github.com/hhzl/Amber-ToDo-List)
