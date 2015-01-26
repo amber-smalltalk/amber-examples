@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Amber Smalltalk Snap.svg Demo</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hhzl" />
+    <script type='text/javascript' src='the.js'></script>
+  </head>
+
+  <body>
+  <p>Hi, hhzl! Welcome to Amber project: "Amber Smalltalk Snap.svg Demo".</p>
+  <p>This is the place for your application's HTML. After getting familiar with Amber,
+      just remove this welcome contents from index.html and replace it with your own.</p>
+  <button id="amber-with">Hello from TagBrush >> with:</button>
+  <button id="jquery-append">Hello from jQuery append</button>
+  <button id="snapsvg-button">Hello from Snap.svg</button>
+  <ol id="output-list"></ol>
+  <script type='text/javascript'>
+      require(['app'], function (amber) {
+          amber.initialize({
+            //used for all new packages in IDE
+            'transport.defaultAmdNamespace': "amber-snapsvg"
+          });
+          require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
+          amber.globals.AmberSnapsvg._start();
+      });
+  </script>
+  </body>
+
+</html>
