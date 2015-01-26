@@ -1,3 +1,7 @@
+Note: This project is kept here for historical reasons currently.
+
+For recent development see https://github.com/amber-smalltalk/trysmalltalk
+
 # TrySmalltalk
 
 Tutorial to learn Smalltalk
