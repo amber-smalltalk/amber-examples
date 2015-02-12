@@ -1,0 +1,37 @@
+{
+    "name": "ambertextinputexample",
+    "description": "Shows how to work with a text field.",
+    "version": "0.1.0",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "/*.js",
+        "/*.html",
+        "test",
+        "tests"
+    ],
+    "authors": [
+        {
+            "name": "HannesHirzel",
+            "email": "hannes.hirzel@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/amber-smalltalk/amber-examples",
+    "keywords": [
+        "Amber",
+        "Smalltalk"
+    ],
+    "license": [
+        "MIT"
+    ],
+    "private": false,
+    "dependencies": {
+        "amber": "^0.14.1"
+    },
+    "devDependencies": {
+        "amber-ide-starter-dialog": "^0.1.0",
+        "amber-attic": "^0.1.0",
+        "helios": "^0.3.0"
+    }
+}
