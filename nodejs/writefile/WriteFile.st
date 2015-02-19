@@ -1,6 +1,6 @@
 Object subclass: #WriteFile
     instanceVariableNames: ''
-    package: 'WriteFileExample'!
+    package: 'WriteFile'!
 
 !WriteFile class methodsFor: 'main'!
 
