@@ -99,7 +99,6 @@ Version 0.12 and earlier
 
 - [Ludus](https://github.com/bromagosa/Ludus) game framework
 - [Graphical libraries](https://github.com/hhzl/Amber-Graphical-Libraries-Demo)
-- [Benevoles](https://github.com/vicnet/benevoles) (Manage rewards for volunteers)
 
 Version 0.13
 
@@ -110,3 +109,11 @@ Version 0.14.1
 
 - https://github.com/amber-smalltalk/trysmalltalk
 - [ToDo List](https://github.com/hhzl/Amber-ToDo-List)
+
+
+Version 0.14.13
+- [Benevoles](https://github.com/vicnet/benevoles) (Manage rewards for volunteers)
+
+
+Version 0.14.15
+- [cornucopia-scorecards](https://github.com/seandenigris/cornucopia-scorecards)
