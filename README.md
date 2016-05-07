@@ -4,6 +4,34 @@ Amber Smalltalk Examples
 This project contains various [Amber Smalltalk](http://amber-lang.net/)  examples. Amber may run in a web browser or as a command line program.
 
 
+MOVED
+====
+
+Amber IDE starter is now at https://lolg.it/amber/amber-ide-starter.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+
 Tools needed
 ------------
 
